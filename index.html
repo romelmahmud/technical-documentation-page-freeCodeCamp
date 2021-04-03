@@ -227,9 +227,90 @@
       </section>
       <section class="main-section" id="React_jsx">
         <header><h2>React JSX</h2></header>
+        <div class="content">
+          <h3>What is JSX</h3>
+          <ul>
+            <li>JSX stands for JavaScript XML.</li>
+            <li>JSX allows us to write HTML in React.</li>
+            <li>JSX makes it easier to write and add HTML in React.</li>
+          </ul>
+          <h3>Coding JSX</h3>
+          <p>
+            JSX allows us to write HTML elements in JavaScript and place them in
+            the DOM without any createElement() and/or appendChild() methods.
+            JSX converts HTML tags into react elements.
+          </p>
+          <p>Example:</p>
+          <p>With JSX:</p>
+          <pre><code>
+             const myelement = &lt;h1&gt;I Love JSX!&lt;/h1&gt;;
+             
+             ReactDOM.render(myelement, document.getElementById('root'));
+            </code></pre>
+          <p>Without JSX:</p>
+          <pre><code>
+               const myelement = React.createElement('h1', {}, 'I do not use JSX!');
+               
+               ReactDOM.render(myelement, document.getElementById('root'));
+            </code></pre>
+        </div>
       </section>
       <section class="main-section" id="React_Components">
         <header><h2>React Components</h2></header>
+        <div class="content">
+          <p>
+            Components are like functions that return HTML elements. Components
+            are independent and reusable bits of code. They serve the same
+            purpose as JavaScript functions, but work in isolation and return
+            HTML via a render() function.
+          </p>
+          <p>Components come in two types</p>
+          <ul>
+            <li>Class Components</li>
+            <li>Function Components</li>
+          </ul>
+          <h3>Create Class Components</h3>
+          <p>
+            When creating a React component, the component's name must start
+            with an upper case letter. The component has to include the
+            <code> extends React.Component</code> statement, this statement
+            creates an inheritance to React.Component, and gives your component
+            access to React.Component's functions. The component also requires a
+            <code> render()</code>
+            method, this method returns HTML.
+          </p>
+          <p>Example:</p>
+          <pre><code>
+            class Car extends React.Component {
+               render() {
+                 return &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt; ;
+               }
+             }
+          </code></pre>
+          <p>
+            Now your React application has a component called Car, which returns
+            a <code>&lt;h2&gt;</code> element. To use this component in your
+            application, use similar syntax as normal HTML:
+            <code>&lt;Car /&gt;</code>
+          </p>
+          <p>Display the <code>Car</code> component in the "root" element:</p>
+          <pre><code>ReactDOM.render(&lt;Car /&gt;, document.getElementById('root'));</code></pre>
+
+          <h3>Create a Function Component</h3>
+          <p>
+            A Function component also returns HTML, and behaves pretty much the
+            same way as a Class component, but Class components have some
+            additions, and will be preferred in this tutorial.
+          </p>
+          <p>Example:</p>
+          <pre><code>
+            function Car() {
+               return &lt;h2&gt;Hi, I am also a Car!&lt;/h2&gt; ;
+             }
+          </code></pre>
+          <p>Display the <code>Car</code> component in the "root" element:</p>
+          <pre><code>ReactDOM.render(&lt;Car /&gt;, document.getElementById('root'));</code></pre>
+        </div>
       </section>
       <section class="main-section" id="React_Props">
         <header><h2>React Props</h2></header>
