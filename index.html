@@ -177,6 +177,52 @@
                &lt;div id=&quot;root&quot;&gt;
                &lt;/div&gt; 
             &lt;/body&gt;</code></pre>
+          <h3>The HTML Code</h3>
+          <p>
+            The HTML code in this tutorial uses JSX which allows you to write
+            HTML tags inside the JavaScript code:
+          </p>
+          <pre><code>
+             
+         const myelement = ( 
+
+            &lt;table&gt; 
+            &lt;tr&gt; 
+               &lt;th&gt;Name&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt; 
+               &lt;td&gt;John&lt;/td&gt;
+            &lt;/tr&gt; 
+            &lt;tr&gt; 
+               &lt;td&gt;Elsa&lt;/td&gt; 
+            &lt;/tr&gt; 
+            &lt;/table&gt; );
+            
+            ReactDOM.render(myelement, document.getElementById('root'));
+
+          </code></pre>
+          <h3>The Root Node</h3>
+          <p>
+            The root node is the HTML element where you want to display the
+            result. It is like a container for content managed by React. It does
+            NOT have to be a <code> &lt;div&gt; </code> element and it does NOT
+            have to have the <code>id='root'</code> :
+          </p>
+          <p>Example:</p>
+          <pre><code>
+             
+            &lt;body&gt;
+
+              &lt;header id=&quot;sandy&quot;&gt;&lt;/header&gt;
+              
+            &lt;/body&gt;
+
+          </code></pre>
+          <p>
+            Display the result in the
+            <code> &lt;header id=&quot;sandy&quot;&gt; </code> element:
+          </p>
+          <pre><code>ReactDOM.render(&lt;p&gt;Hallo&lt;/p&gt;, document.getElementById('sandy'));</code></pre>
         </div>
       </section>
       <section class="main-section" id="React_jsx">
