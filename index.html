@@ -74,22 +74,22 @@
             JSX syntax and ES6 in older browsers.
           </p>
           <div class="code-container">
-            <pre>
-               <code>&lt;!DOCTYPE html&gt; 
-                      &lt;html&gt; 
-                        &lt;script src=&quot;https://unpkg.com/react@16/umd/react.production.min.js&quot;&gt;&lt;/script&gt;
-                        &lt;script src=&quot;https://unpkg.com/react-dom@16/umd/react-dom.production.min.js&quot;&gt;
-                        &lt;/script&gt; &lt;script src=&quot;https://unpkg.com/babel-standalone@6.15.0/babel.min.js&quot;&gt;
-                        &lt;/script&gt; 
-                        &lt;body&gt; 
-                           &lt;div id=&quot;mydiv&quot;&gt;&lt;/div&gt; 
-                           &lt;script type=&quot;text/babel&quot;&gt; 
-                              class Hello extends React.Component { render() { 
-                              return &lt;h1&gt;Hello World!&lt;/h1&gt; } } 
-                              ReactDOM.render(&lt;Hello /&gt;, document.getElementById('mydiv')) 
-                           &lt;/script&gt;
-                        &lt;/body&gt;
-                     &lt;/html&gt;</code>   
+            <pre><code>
+      &lt;!DOCTYPE html&gt; 
+      &lt;html&gt; 
+        &lt;script src=&quot;https://unpkg.com/react@16/umd/react.production.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://unpkg.com/react-dom@16/umd/react-dom.production.min.js&quot;&gt;
+        &lt;/script&gt; &lt;script src=&quot;https://unpkg.com/babel-standalone@6.15.0/babel.min.js&quot;&gt;
+         &lt;/script&gt; 
+        &lt;body&gt; 
+            &lt;div id=&quot;mydiv&quot;&gt;&lt;/div&gt; 
+            &lt;script type=&quot;text/babel&quot;&gt; 
+              class Hello extends React.Component { render() { 
+              return &lt;h1&gt;Hello World!&lt;/h1&gt; } } 
+              ReactDOM.render(&lt;Hello /&gt;, document.getElementById('mydiv')) 
+            &lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;</code>   
              </pre>
           </div>
           <!--code-container-->
@@ -173,10 +173,10 @@
             <code>&lt;div id=&quot;root&quot;&gt;</code> element:
           </p>
           <pre><code>
-             &lt;body&gt; 
-               &lt;div id=&quot;root&quot;&gt;
-               &lt;/div&gt; 
-            &lt;/body&gt;</code></pre>
+        &lt;body&gt; 
+            &lt;div id=&quot;root&quot;&gt;
+            &lt;/div&gt; 
+        &lt;/body&gt;</code></pre>
           <h3>The HTML Code</h3>
           <p>
             The HTML code in this tutorial uses JSX which allows you to write
@@ -184,21 +184,21 @@
           </p>
           <pre><code>
              
-         const myelement = ( 
+      const myelement = ( 
 
-            &lt;table&gt; 
-            &lt;tr&gt; 
-               &lt;th&gt;Name&lt;/th&gt;
-            &lt;/tr&gt;
-            &lt;tr&gt; 
-               &lt;td&gt;John&lt;/td&gt;
-            &lt;/tr&gt; 
-            &lt;tr&gt; 
-               &lt;td&gt;Elsa&lt;/td&gt; 
-            &lt;/tr&gt; 
-            &lt;/table&gt; );
+        &lt;table&gt; 
+        &lt;tr&gt; 
+            &lt;th&gt;Name&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+            &lt;td&gt;John&lt;/td&gt;
+        &lt;/tr&gt; 
+        &lt;tr&gt; 
+            &lt;td&gt;Elsa&lt;/td&gt; 
+        &lt;/tr&gt; 
+        &lt;/table&gt; );
             
-            ReactDOM.render(myelement, document.getElementById('root'));
+        ReactDOM.render(myelement, document.getElementById('root'));
 
           </code></pre>
           <h3>The Root Node</h3>
@@ -457,6 +457,25 @@
             <code>onClick={shoot}</code> instead of
             <code>onClick="shoot()"</code> .
           </p>
+          <h3>Event Handlers</h3>
+          <p>
+            A good practice is to put the event handler as a method in the
+            component class:
+          </p>
+          <pre><code>
+              class Football extends React.Component {
+                shoot() {
+                  alert("Great Shot!");
+                }
+                render() {
+                  return (
+                    &lt;button onClick={this.shoot}&gt;Take the shot!&lt;/button&gt;
+                  );
+                }
+              }
+              
+              ReactDOM.render(&lt;Football /&gt;, document.getElementById('root'));
+            </code></pre>
         </div>
       </section>
     </main>
