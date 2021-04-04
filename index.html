@@ -237,20 +237,20 @@
         <header><h2>React JSX</h2></header>
         <div class="content">
           <h3>What is JSX</h3>
-          <ul>
+          <ul class="mb-s">
             <li>JSX stands for JavaScript XML.</li>
             <li>JSX allows us to write HTML in React.</li>
             <li>JSX makes it easier to write and add HTML in React.</li>
           </ul>
           <h3>Coding JSX</h3>
-          <p>
+          <p class="mb-s">
             JSX allows us to write HTML elements in JavaScript and place them in
             the DOM without any createElement() and/or appendChild() methods.
             JSX converts HTML tags into react elements.
           </p>
-          <p>Example:</p>
+          <p class="mb-s">Example:</p>
           <p>With JSX:</p>
-          <pre><code>
+          <pre class="mb-s"><code>
              const myelement = &lt;h1&gt;I Love JSX!&lt;/h1&gt;;
              
              ReactDOM.render(myelement, document.getElementById('root'));
@@ -266,58 +266,69 @@
       <section class="main-section" id="React_Components">
         <header><h2>React Components</h2></header>
         <div class="content">
-          <p>
+          <p class="mb-s">
             Components are like functions that return HTML elements. Components
             are independent and reusable bits of code. They serve the same
             purpose as JavaScript functions, but work in isolation and return
             HTML via a render() function.
           </p>
-          <p>Components come in two types</p>
-          <ul>
+          <p class="mb-s">Components come in two types</p>
+          <ul class="mb-s">
             <li>Class Components</li>
             <li>Function Components</li>
           </ul>
           <h3>Create Class Components</h3>
-          <p>
+          <p class="mb-s">
             When creating a React component, the component's name must start
             with an upper case letter. The component has to include the
-            <code> extends React.Component</code> statement, this statement
-            creates an inheritance to React.Component, and gives your component
-            access to React.Component's functions. The component also requires a
-            <code> render()</code>
+            <code class="red"> extends React.Component</code> statement, this
+            statement creates an inheritance to React.Component, and gives your
+            component access to React.Component's functions. The component also
+            requires a
+            <code class="red"> render()</code>
             method, this method returns HTML.
           </p>
-          <p>Example:</p>
-          <pre><code>
-            class Car extends React.Component {
-               render() {
-                 return &lt;h2&gt;Hi, I am a Car!&lt;/h2&gt; ;
-               }
-             }
+          <p class="mb-s">Example:</p>
+          <pre class="mb-s"><code>
+      class Car extends React.Compone{
+          render() {
+            return &lt;h2&gt;Hi, I amCar!&lt;/h2&gt; ;
+          }
+        }
           </code></pre>
-          <p>
+          <p class="mb-s">
             Now your React application has a component called Car, which returns
-            a <code>&lt;h2&gt;</code> element. To use this component in your
-            application, use similar syntax as normal HTML:
-            <code>&lt;Car /&gt;</code>
+            a <code class="red">&lt;h2&gt;</code> element. To use this component
+            in your application, use similar syntax as normal HTML:
+            <code class="red">&lt;Car /&gt;</code>
           </p>
-          <p>Display the <code>Car</code> component in the "root" element:</p>
-          <pre><code>ReactDOM.render(&lt;Car /&gt;, document.getElementById('root'));</code></pre>
+          <p class="mb-s">
+            Display the <code class="red">Car</code> component in the "root"
+            element:
+          </p>
+          <pre class="mb-s"><code>
+    ReactDOM.render(&lt;Car /&gdocument.getElementById('root');
+          </code></pre>
 
           <h3>Create a Function Component</h3>
-          <p>
+          <p class="mb-s">
             A Function component also returns HTML, and behaves pretty much the
             same way as a Class component, but Class components have some
             additions, and will be preferred in this tutorial.
           </p>
-          <p>Example:</p>
-          <pre><code>
-            function Car() {
-               return &lt;h2&gt;Hi, I am also a Car!&lt;/h2&gt; ;
-             }
+          <p class="mb-s">Example:</p>
+          <pre class="mb-s"><code>
+      function Car() {
+          return &lt;h2&gt;Hi, I am a a Car!&lt;/h2&gt; ;
+        }
           </code></pre>
-          <p>Display the <code>Car</code> component in the "root" element:</p>
-          <pre><code>ReactDOM.render(&lt;Car /&gt;, document.getElementById('root'));</code></pre>
+          <p class="mb-s">
+            Display the <code class="red">Car</code> component in the "root"
+            element:
+          </p>
+          <pre><code>
+     ReactDOM.render(&lt;Car /&gt;, document.getElementById('root'));
+          </code></pre>
         </div>
       </section>
       <section class="main-section" id="React_Props">
@@ -328,46 +339,53 @@
             like function arguments in JavaScript and attributes in HTML. Props
             are passed to components via HTML attributes.
           </p>
-          <p>
+          <p class="mb-s">
             To send props into a component, use the same syntax as HTML
             attributes:
           </p>
-          <p>Example: Add a "brand" attribute to the Car element:</p>
-          <pre><code>const myelement = &lt;Car brand=&quot;Ford&quot; /&gt; ;
+          <p class="mb-s">
+            Example: Add a "brand" attribute to the Car element:
+          </p>
+          <pre class="mb-s"><code>
+      const myelement = &lt;Car branquot;Ford&quot; /&gt; ;
           </code></pre>
-          <p>The component receives the argument as a props object:</p>
-          <pre><code>class Car extends React.Component {
-            render() {
-              return &lt;h2&gt;I am a {this.props.brand}!&lt;/h2&gt; ;
-            }
-          }</code></pre>
+          <p class="mb-s">
+            The component receives the argument as a props object:
+          </p>
+          <pre class="mb-s"><code>
+      class Car extends React.Compone{
+        render() {
+          return &lt;h2&gt;I am a {thprops. brand}!&lt;/h2&gt; ;
+        }
+      }
+        </code></pre>
 
           <h3>Pass Data</h3>
-          <p>
+          <p class="mb-s">
             Props are also how you pass data from one component to another, as
             parameters.
           </p>
-          <p>
+          <p class="mb-s">
             Example: Send the "brand" property from the Garage component to the
             Car component:
           </p>
           <pre><code>
-            class Car extends React.Component {
-               render() {
-                 return &lt;h2&gt;I am a {this.props.brand}!&lt;/h2&gt; ;
-               }
-             }
+      class Car extends React.Compone{
+          render() {
+            return &lt;h2&gt;I am{this.props.brand}!&lt;/gt; ;
+          }
+        }
              
-             class Garage extends React.Component {
-               render() {
-                 return (
-                 &lt;div&gt;
-                   &lt;h1&gt;Who lives in my garage?&lt;/h1&gt;
-                   &lt;Car brand=&quot;Ford&quot; /&gt;
-                 &lt;/div&gt;
-                 );
-               }
-             }
+        class Garage extends ReaComponent {
+          render() {
+            return (
+            &lt;div&gt;
+              &lt;h1&gt;Who lives in garage?&lt;/h1&gt;
+              &lt;Car brand=&quot;Foquot; /&gt;
+            &lt;/div&gt;
+            );
+          }
+       }
              
              ReactDOM.render(&lt;Garage /&gt;, document.getElementById('root'));
           </code></pre>
@@ -376,68 +394,70 @@
       <section class="main-section" id="React_State">
         <header><h2>React State</h2></header>
         <div class="content">
-          <p>
+          <p class="mb-s">
             React components has a built-in state object. The state object is
             where you store property values that belongs to the component. When
             the state object changes, the component re-renders.
           </p>
           <h3>Creating the state Object</h3>
-          <p>The state object is initialized in the constructor:</p>
+          <p class="mb-s">
+            The state object is initialized in the constructor:
+          </p>
           <pre><code>
-            class Car extends React.Component {
-              constructor(props) {
-                super(props);
-                this.state = {brand: "Ford"};
-              }
-              render() {
-                return (
-                  &lt;div&gt;
-                    &lt;h1&gt;My Car&lt;/h1&gt;
-                  &lt;/div&gt;
+      class Car extends React.Compone{
+        constructor(props) {
+          super(props);
+          this.state = {brand: "Ford"};
+        }
+        render() {
+          return (
+            &lt;div&gt;
+              &lt;h1&gt;My Car&lt;/gt;
+            &lt;/div&gt;
 
-                );
-              }
-            }
+          );
+        }
+      }
           </code></pre>
         </div>
       </section>
       <section class="main-section" id="React_Lifecycle">
         <header><h2>React Lifecycle</h2></header>
         <div class="content">
-          <p>
+          <p class="mb-s">
             Each component in React has a lifecycle which you can monitor and
             manipulate during its three main phases. The three phases are:
           </p>
-          <ul>
+          <ul class="mb-s">
             <li>Mounting</li>
             <li>Updating</li>
             <li>Unmounting</li>
           </ul>
           <h3>Mounting</h3>
-          <p>
+          <p class="mb-s">
             Mounting means putting elements into the DOM. React has four
             built-in methods that gets called, in this order, when mounting a
             component:
           </p>
-          <ol>
-            <li><code>constructor() </code></li>
-            <li><code>getDerivedStateFromProps() </code></li>
-            <li><code>render() </code></li>
-            <li><code>componentDidMount() </code></li>
+          <ol class="mb-s">
+            <li><code class="red">constructor() </code></li>
+            <li><code class="red">getDerivedStateFromProps() </code></li>
+            <li><code class="red">render() </code></li>
+            <li><code class="red">componentDidMount() </code></li>
           </ol>
           <h3>Updating</h3>
-          <p>
+          <p class="mb-s">
             The next phase in the lifecycle is when a component is updated. A
             component is updated whenever there is a change in the component's
             state or props. React has five built-in methods that gets called, in
             this order, when a component is updated:
           </p>
-          <ol>
-            <li><code>getDerivedStateFromProps() </code></li>
-            <li><code>shouldComponentUpdate() </code></li>
-            <li><code>render() </code></li>
-            <li><code>getSnapshotBeforeUpdate() </code></li>
-            <li><code>componentDidUpdate() </code></li>
+          <ol class="mb-s">
+            <li><code class="red">getDerivedStateFromProps() </code></li>
+            <li><code class="red">shouldComponentUpdate() </code></li>
+            <li><code class="red">render() </code></li>
+            <li><code class="red">getSnapshotBeforeUpdate() </code></li>
+            <li><code class="red">componentDidUpdate() </code></li>
           </ol>
           <h3>Unmounting</h3>
           <p>
@@ -446,43 +466,44 @@
             built-in method that gets called when a component is unmounted:
           </p>
           <ul>
-            <li><code>componentWillUnmount() </code></li>
+            <li><code class="red">componentWillUnmount() </code></li>
           </ul>
         </div>
       </section>
       <section class="main-section" id="React_Events">
         <header><h2>React Events</h2></header>
         <div class="content">
-          <p>
+          <p class="mb-s">
             Just like HTML, React can perform actions based on user events.
             React has the same events as HTML: click, change, mouseover etc.
           </p>
           <h3>Adding Events</h3>
-          <p>
+          <p class="mb-s">
             React events are written in camelCase syntax:
-            <code>onClick</code> instead of <code>onclick</code> . React event
-            handlers are written inside curly braces:
-            <code>onClick={shoot}</code> instead of
-            <code>onClick="shoot()"</code> .
+            <code class="red">onClick</code> instead of
+            <code class="red">onclick</code> . React event handlers are written
+            inside curly braces:
+            <code class="red">onClick={shoot}</code> instead of
+            <code class="red">onClick="shoot()"</code> .
           </p>
           <h3>Event Handlers</h3>
-          <p>
+          <p class="mb-s">
             A good practice is to put the event handler as a method in the
             component class:
           </p>
           <pre><code>
-              class Football extends React.Component {
-                shoot() {
-                  alert("Great Shot!");
-                }
-                render() {
-                  return (
-                    &lt;button onClick={this.shoot}&gt;Take the shot!&lt;/button&gt;
-                  );
-                }
-              }
+      class Football extends ReComponent {
+        shoot() {
+          alert("Great Shot!");
+        }
+        render() {
+          return (
+            &lt;button onClick={tshoot}&gt;Take shot!&lt;/button&gt;
+          );
+        }
+      }
               
-              ReactDOM.render(&lt;Football /&gt;, document.getElementById('root'));
+      ReactDOM.render(&lt;Footbalgt;, document.getElement('root'));
             </code></pre>
         </div>
       </section>

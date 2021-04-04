@@ -50,12 +50,18 @@ ul li {
   list-style: none;
   font-weight: 400;
 }
+ol li {
+  list-style: inside;
+}
 
 .mb-s {
   margin-bottom: 1rem;
 }
 .mb-m {
   margin-bottom: 1.25rem;
+}
+.red {
+  color: #e40017;
 }
 
 /* 
