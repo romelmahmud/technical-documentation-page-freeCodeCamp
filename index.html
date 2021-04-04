@@ -314,24 +314,150 @@
       </section>
       <section class="main-section" id="React_Props">
         <header><h2>React Props</h2></header>
+        <div class="content">
+          <p>
+            Props are arguments passed into React components. React Props are
+            like function arguments in JavaScript and attributes in HTML. Props
+            are passed to components via HTML attributes.
+          </p>
+          <p>
+            To send props into a component, use the same syntax as HTML
+            attributes:
+          </p>
+          <p>Example: Add a "brand" attribute to the Car element:</p>
+          <pre><code>const myelement = &lt;Car brand=&quot;Ford&quot; /&gt; ;
+          </code></pre>
+          <p>The component receives the argument as a props object:</p>
+          <pre><code>class Car extends React.Component {
+            render() {
+              return &lt;h2&gt;I am a {this.props.brand}!&lt;/h2&gt; ;
+            }
+          }</code></pre>
+
+          <h3>Pass Data</h3>
+          <p>
+            Props are also how you pass data from one component to another, as
+            parameters.
+          </p>
+          <p>
+            Example: Send the "brand" property from the Garage component to the
+            Car component:
+          </p>
+          <pre><code>
+            class Car extends React.Component {
+               render() {
+                 return &lt;h2&gt;I am a {this.props.brand}!&lt;/h2&gt; ;
+               }
+             }
+             
+             class Garage extends React.Component {
+               render() {
+                 return (
+                 &lt;div&gt;
+                   &lt;h1&gt;Who lives in my garage?&lt;/h1&gt;
+                   &lt;Car brand=&quot;Ford&quot; /&gt;
+                 &lt;/div&gt;
+                 );
+               }
+             }
+             
+             ReactDOM.render(&lt;Garage /&gt;, document.getElementById('root'));
+          </code></pre>
+        </div>
       </section>
       <section class="main-section" id="React_State">
         <header><h2>React State</h2></header>
+        <div class="content">
+          <p>
+            React components has a built-in state object. The state object is
+            where you store property values that belongs to the component. When
+            the state object changes, the component re-renders.
+          </p>
+          <h3>Creating the state Object</h3>
+          <p>The state object is initialized in the constructor:</p>
+          <pre><code>
+            class Car extends React.Component {
+              constructor(props) {
+                super(props);
+                this.state = {brand: "Ford"};
+              }
+              render() {
+                return (
+                  &lt;div&gt;
+                    &lt;h1&gt;My Car&lt;/h1&gt;
+                  &lt;/div&gt;
+
+                );
+              }
+            }
+          </code></pre>
+        </div>
       </section>
       <section class="main-section" id="React_Lifecycle">
         <header><h2>React Lifecycle</h2></header>
+        <div class="content">
+          <p>
+            Each component in React has a lifecycle which you can monitor and
+            manipulate during its three main phases. The three phases are:
+          </p>
+          <ul>
+            <li>Mounting</li>
+            <li>Updating</li>
+            <li>Unmounting</li>
+          </ul>
+          <h3>Mounting</h3>
+          <p>
+            Mounting means putting elements into the DOM. React has four
+            built-in methods that gets called, in this order, when mounting a
+            component:
+          </p>
+          <ol>
+            <li><code>constructor() </code></li>
+            <li><code>getDerivedStateFromProps() </code></li>
+            <li><code>render() </code></li>
+            <li><code>componentDidMount() </code></li>
+          </ol>
+          <h3>Updating</h3>
+          <p>
+            The next phase in the lifecycle is when a component is updated. A
+            component is updated whenever there is a change in the component's
+            state or props. React has five built-in methods that gets called, in
+            this order, when a component is updated:
+          </p>
+          <ol>
+            <li><code>getDerivedStateFromProps() </code></li>
+            <li><code>shouldComponentUpdate() </code></li>
+            <li><code>render() </code></li>
+            <li><code>getSnapshotBeforeUpdate() </code></li>
+            <li><code>componentDidUpdate() </code></li>
+          </ol>
+          <h3>Unmounting</h3>
+          <p>
+            The next phase in the lifecycle is when a component is removed from
+            the DOM, or unmounting as React likes to call it. React has only one
+            built-in method that gets called when a component is unmounted:
+          </p>
+          <ul>
+            <li><code>componentWillUnmount() </code></li>
+          </ul>
+        </div>
       </section>
       <section class="main-section" id="React_Events">
         <header><h2>React Events</h2></header>
-      </section>
-      <section class="main-section" id="React_Forms">
-        <header><h2>React Forms</h2></header>
-      </section>
-      <section class="main-section" id="React_CSS">
-        <header><h2>React CSS</h2></header>
-      </section>
-      <section class="main-section" id="React_Sass">
-        <header><h2>React Sass</h2></header>
+        <div class="content">
+          <p>
+            Just like HTML, React can perform actions based on user events.
+            React has the same events as HTML: click, change, mouseover etc.
+          </p>
+          <h3>Adding Events</h3>
+          <p>
+            React events are written in camelCase syntax:
+            <code>onClick</code> instead of <code>onclick</code> . React event
+            handlers are written inside curly braces:
+            <code>onClick={shoot}</code> instead of
+            <code>onClick="shoot()"</code> .
+          </p>
+        </div>
       </section>
     </main>
   </body>
