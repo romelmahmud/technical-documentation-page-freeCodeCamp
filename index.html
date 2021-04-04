@@ -15,7 +15,7 @@
       <div class="nav-link-container">
         <a href="#Introduction" class="nav-link">Introduction</a>
         <a href="#Get_Started" class="nav-link">Get Started</a>
-        <a href="#React_Ss6" class="nav-link">React Es6</a>
+        <a href="#React_Es6" class="nav-link">React Es6</a>
         <a href="#React_Render_HTML" class="nav-link">React Render HTML</a>
         <a href="#React_JSX" class="nav-link">React JSX</a>
         <a href="#React_Components" class="nav-link">React Components</a>
@@ -29,16 +29,16 @@
     <main id="main-doc">
       <section class="main-section" id="Introduction">
         <header>
-          <h2>Introduction</h2>
+          <h2 class="mb-m">Introduction</h2>
         </header>
         <div class="content">
           <h3>What is React?</h3>
-          <p>
+          <p class="mb-s">
             React is a JavaScript library created by Facebook. React is a tool
             for building UI components.
           </p>
-          <h3>How does React Work?</h3>
-          <ul>
+          <h3 class="mb-s">How does React Work?</h3>
+          <ul class="mb-s">
             <li>React creates a VIRTUAL DOM in memory</li>
             <li>React only changes what needs to be changed!</li>
           </ul>
@@ -55,7 +55,7 @@
           <h2>Get Started</h2>
         </header>
         <div class="content">
-          <p>
+          <p class="mb-s">
             To use React in production, you need NPM and Node.js. To get an
             overview of what React is, you can write React code directly in
             HTML. But in order to use React in production, you need NPM and
@@ -66,12 +66,12 @@
             The quickest way start learning React is to write React directly in
             your HTML files.
           </p>
-          <p>
+          <p class="mb-s">
             Start by including three scripts, the first two let us write React
             code in our JavaScripts, and the third, Babel, allows us to write
             JSX syntax and ES6 in older browsers.
           </p>
-          <div class="code-container">
+          <div class="code-container mb-s">
             <pre><code>
       &lt;!DOCTYPE html&gt; 
       &lt;html&gt; 
@@ -91,36 +91,44 @@
              </pre>
           </div>
           <!--code-container-->
-          <p>
+          <p class="mb-s">
             This way of using React can be OK for testing purposes, but for
             production you will need to set up a React environment.
           </p>
           <h3>Setting up a React Environment</h3>
-          <p>
+          <p class="mb-s">
             If you have NPM and Node.js installed, you can create a React
             application by first installing the create-react-app. Install
             create-react-app by running this command in your terminal
           </p>
-          <pre><code>C:\Users\Your Name>npm install -g create-react-app</code></pre>
-          <p>
+          <pre
+            class="mb-s"
+          ><code>C:\Users\Your Name>npm install -g create-react-app</code></pre>
+          <p class="mb-s">
             Then you are able to create a React application, let's create one
             called myfirstreact. Run this command to create a React application
             named myfirstreact:
           </p>
-          <pre><code>C:\Users\Your Name>npx create-react-app myfirstreact</code></pre>
-          <p>
+          <pre
+            class="mb-s"
+          ><code>C:\Users\Your Name>npx create-react-app myfirstreact</code></pre>
+          <p class="mb-s">
             The create-react-app will set up everything you need to run a React
             application
           </p>
           <h3>Run the React Application</h3>
-          <p>
+          <p class="mb-s">
             Now you are ready to run your first real React application! Run this
             command to move to the myfirstreact directory:
           </p>
-          <pre><code>C:\Users\Your Name>cd myfirstreact
+          <pre class="mb-s"><code>C:\Users\Your Name>cd myfirstreact
           </code></pre>
-          <p>Run this command to run the React application myfirstreact:</p>
-          <pre><code>C:\Users\Your Name\myfirstreact>npm start</code></pre>
+          <p class="mb-s">
+            Run this command to run the React application myfirstreact:
+          </p>
+          <pre
+            class="mb-s"
+          ><code>C:\Users\Your Name\myfirstreact>npm start</code></pre>
           <p>
             A new browser window will pop up with your newly created React App!
             If not, open your browser and type localhost:3000 in the address
@@ -133,13 +141,13 @@
         <header><h2>React Es6</h2></header>
         <div class="content">
           <h3>What is ES6?</h3>
-          <p>
+          <p class="mb-s">
             ES6 stands for ECMAScript 6. ECMAScript was created to standardize
             JavaScript, and ES6 is the 6th version of ECMAScript, it was
             published in 2015, and is also known as ECMAScript 2015.
           </p>
           <h3>Why Should I Learn ES6?</h3>
-          <p>
+          <p class="mb-s">
             React uses ES6, and you should be familiar with some of the new
             features like:
           </p>
@@ -153,34 +161,36 @@
       <section class="main-section" id="React_Render_HTML">
         <header><h2>React Render HTML</h2></header>
         <div class="content">
-          <p>
+          <p class="mb-s">
             React's goal is in many ways to render HTML in a web page. React
             renders HTML to the web page by using a function called
             ReactDOM.render().
           </p>
           <h3>The Render Function</h3>
-          <p>
+          <p class="mb-s">
             The ReactDOM.render() function takes two arguments, HTML code and an
             HTML element. The purpose of the function is to display the
             specified HTML code inside the specified HTML element.
           </p>
-          <p>Example:</p>
-          <pre><code>ReactDOM.render(&lt;p&gt;Hello&lt;/p&gt;, document.getElementById('root'));</code></pre>
-          <p>
+          <p class="mb-s">Example:</p>
+          <pre
+            class="mb-s"
+          ><code>ReactDOM.render(&lt;p&gt;Hello&lt;/p&gt;, document.getElementById('root'));</code></pre>
+          <p class="mb-s">
             The result is displayed in the
             <code>&lt;div id=&quot;root&quot;&gt;</code> element:
           </p>
-          <pre><code>
+          <pre class="mb-s"><code>
         &lt;body&gt; 
             &lt;div id=&quot;root&quot;&gt;
             &lt;/div&gt; 
         &lt;/body&gt;</code></pre>
           <h3>The HTML Code</h3>
-          <p>
+          <p class="mb-s">
             The HTML code in this tutorial uses JSX which allows you to write
             HTML tags inside the JavaScript code:
           </p>
-          <pre><code>
+          <pre class="mb-s"><code>
              
       const myelement = ( 
 
@@ -200,14 +210,14 @@
 
           </code></pre>
           <h3>The Root Node</h3>
-          <p>
+          <p class="mb-s">
             The root node is the HTML element where you want to display the
             result. It is like a container for content managed by React. It does
             NOT have to be a <code> &lt;div&gt; </code> element and it does NOT
             have to have the <code>id='root'</code> :
           </p>
-          <p>Example:</p>
-          <pre><code>
+          <p class="mb-s">Example:</p>
+          <pre class="mb-s"><code>
              
             &lt;body&gt;
 
@@ -216,7 +226,7 @@
             &lt;/body&gt;
 
           </code></pre>
-          <p>
+          <p class="mb-s">
             Display the result in the
             <code> &lt;header id=&quot;sandy&quot;&gt; </code> element:
           </p>

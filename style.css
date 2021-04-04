@@ -1,3 +1,7 @@
+/*
+ * Global style 
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
 
 * {
@@ -7,7 +11,7 @@
 }
 
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 :root {
   --text-black: #151515;
@@ -19,6 +23,7 @@ html {
 body {
   color: var(--text-black);
   font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
 }
 p {
   font-weight: 300;
@@ -28,17 +33,29 @@ h2,
 h3,
 h4 {
   color: var(--text-grey);
+  font-weight: 700;
 }
 pre {
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
   overflow-x: scroll;
+  color: #c4bfdd;
 }
 code {
-  color: var(--dark-blue);
   font-weight: 400;
 }
 a {
   text-decoration: none;
+}
+ul li {
+  list-style: none;
+  font-weight: 400;
+}
+
+.mb-s {
+  margin-bottom: 1rem;
+}
+.mb-m {
+  margin-bottom: 1.25rem;
 }
 
 /* 
@@ -47,7 +64,7 @@ a {
 nav {
   height: 35vh;
   padding: 1.5rem 0;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
 }
@@ -74,4 +91,27 @@ nav .nav-link-container a {
 nav .nav-link-container a:hover {
   background-color: var(--dark-blue);
   color: white;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+/* 
+ * main section
+ */
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+#Introduction {
+  margin-top: 1.5rem;
+}
+section.main-section {
+  padding: 2rem 0;
 }
