@@ -29,7 +29,7 @@
     <main id="main-doc">
       <section class="main-section" id="Introduction">
         <header>
-          <h2 class="mb-m">Introduction</h2>
+          <h2>Introduction</h2>
         </header>
         <div class="content">
           <h3>What is React?</h3>
@@ -37,7 +37,7 @@
             React is a JavaScript library created by Facebook. React is a tool
             for building UI components.
           </p>
-          <h3 class="mb-s">How does React Work?</h3>
+          <h3>How does React Work?</h3>
           <ul class="mb-s">
             <li>React creates a VIRTUAL DOM in memory</li>
             <li>React only changes what needs to be changed!</li>
@@ -78,7 +78,7 @@
         &lt;script src=&quot;https://unpkg.com/react@16/umd/react.production.min.js&quot;&gt;&lt;/script&gt;
         &lt;script src=&quot;https://unpkg.com/react-dom@16/umd/react-dom.production.min.js&quot;&gt;
         &lt;/script&gt; &lt;script src=&quot;https://unpkg.com/babel-standalone@6.15.0/babel.min.js&quot;&gt;
-         &lt;/script&gt; 
+        &lt;/script&gt; 
         &lt;body&gt; 
             &lt;div id=&quot;mydiv&quot;&gt;&lt;/div&gt; 
             &lt;script type=&quot;text/babel&quot;&gt; 
@@ -103,7 +103,9 @@
           </p>
           <pre
             class="mb-s"
-          ><code>C:\Users\Your Name>npm install -g create-react-app</code></pre>
+          ><code>
+    C:\Users\Your Name>npm install -g create-react-app
+          </code></pre>
           <p class="mb-s">
             Then you are able to create a React application, let's create one
             called myfirstreact. Run this command to create a React application
@@ -111,7 +113,9 @@
           </p>
           <pre
             class="mb-s"
-          ><code>C:\Users\Your Name>npx create-react-app myfirstreact</code></pre>
+          ><code>
+    C:\Users\Your Name>npx create-react-app myfirstreact
+  </code></pre>
           <p class="mb-s">
             The create-react-app will set up everything you need to run a React
             application
@@ -121,14 +125,17 @@
             Now you are ready to run your first real React application! Run this
             command to move to the myfirstreact directory:
           </p>
-          <pre class="mb-s"><code>C:\Users\Your Name>cd myfirstreact
+          <pre class="mb-s"><code>
+    C:\Users\Your Name>cd myfirstreact
           </code></pre>
           <p class="mb-s">
             Run this command to run the React application myfirstreact:
           </p>
           <pre
             class="mb-s"
-          ><code>C:\Users\Your Name\myfirstreact>npm start</code></pre>
+          ><code>
+    C:\Users\Your Name\myfirstreact>npm start
+  </code></pre>
           <p>
             A new browser window will pop up with your newly created React App!
             If not, open your browser and type localhost:3000 in the address
@@ -175,16 +182,19 @@
           <p class="mb-s">Example:</p>
           <pre
             class="mb-s"
-          ><code>ReactDOM.render(&lt;p&gt;Hello&lt;/p&gt;, document.getElementById('root'));</code></pre>
+          ><code>
+     ReactDOM.render(&lt;p&gt;Hello&lt;/p&gt;, document.getElementById('root'));
+          </code></pre>
           <p class="mb-s">
             The result is displayed in the
             <code>&lt;div id=&quot;root&quot;&gt;</code> element:
           </p>
           <pre class="mb-s"><code>
-        &lt;body&gt; 
-            &lt;div id=&quot;root&quot;&gt;
-            &lt;/div&gt; 
-        &lt;/body&gt;</code></pre>
+     &lt;body&gt; 
+        &lt;div id=&quot;root&quot;&gt;
+        &lt;/div&gt; 
+     &lt;/body&gt;
+       </code></pre>
           <h3>The HTML Code</h3>
           <p class="mb-s">
             The HTML code in this tutorial uses JSX which allows you to write
@@ -192,21 +202,21 @@
           </p>
           <pre class="mb-s"><code>
              
-      const myelement = ( 
+    const myelement = ( 
 
-        &lt;table&gt; 
-        &lt;tr&gt; 
-            &lt;th&gt;Name&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt; 
-            &lt;td&gt;John&lt;/td&gt;
-        &lt;/tr&gt; 
-        &lt;tr&gt; 
-            &lt;td&gt;Elsa&lt;/td&gt; 
-        &lt;/tr&gt; 
-        &lt;/table&gt; );
+      &lt;table&gt; 
+      &lt;tr&gt; 
+          &lt;th&gt;Name&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt; 
+          &lt;td&gt;John&lt;/td&gt;
+      &lt;/tr&gt; 
+      &lt;tr&gt; 
+          &lt;td&gt;Elsa&lt;/td&gt; 
+      &lt;/tr&gt; 
+      &lt;/table&gt; );
             
-        ReactDOM.render(myelement, document.getElementById('root'));
+      ReactDOM.render(myelement, documentgetElementById('root'));
 
           </code></pre>
           <h3>The Root Node</h3>
@@ -219,18 +229,20 @@
           <p class="mb-s">Example:</p>
           <pre class="mb-s"><code>
              
-            &lt;body&gt;
+      &lt;body&gt;
 
-              &lt;header id=&quot;sandy&quot;&gt;&lt;/header&gt;
+        &lt;header id=&quot;sandy&quogt;&lt;/header&gt;
               
-            &lt;/body&gt;
+      &lt;/body&gt;
 
           </code></pre>
           <p class="mb-s">
             Display the result in the
             <code> &lt;header id=&quot;sandy&quot;&gt; </code> element:
           </p>
-          <pre><code>ReactDOM.render(&lt;p&gt;Hallo&lt;/p&gt;, document.getElementById('sandy'));</code></pre>
+          <pre><code>
+     ReactDOM.render(&lt;p&gt;Hallo /p&gt;, document.getElement ('sandy'));
+    </code></pre>
         </div>
       </section>
       <section class="main-section" id="React_jsx">
@@ -251,15 +263,15 @@
           <p class="mb-s">Example:</p>
           <p>With JSX:</p>
           <pre class="mb-s"><code>
-             const myelement = &lt;h1&gt;I Love JSX!&lt;/h1&gt;;
+      const myelement = &lt;h1&gLove JSX!&lt;/h1&gt;;
              
-             ReactDOM.render(myelement, document.getElementById('root'));
+      ReactDOM.render(myelemedocument.getElementById('root'));
             </code></pre>
           <p>Without JSX:</p>
           <pre><code>
-               const myelement = React.createElement('h1', {}, 'I do not use JSX!');
+      const myelement = RcreateElement('h1', {}, 'not use JSX!');
                
-               ReactDOM.render(myelement, document.getElementById('root'));
+      ReactDOM.render(myelemdocument.getElemen('root'));
             </code></pre>
         </div>
       </section>
