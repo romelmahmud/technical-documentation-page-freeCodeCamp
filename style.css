@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+:root {
+  --text-black: #151515;
+  --text-grey: #1b1717;
+
+  --dark-blue: #272343;
+  --light-blue: #c4bfdd;
+}
+body {
+  color: var(--text-black);
+  font-family: "Nunito Sans", sans-serif;
+}
+p {
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-grey);
+}
+pre {
+  background-color: var(--light-blue);
+  overflow-x: scroll;
+}
+code {
+  color: var(--dark-blue);
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+
+/* 
+* Header Section
+*/
+nav {
+  height: 35vh;
+  padding: 1.5rem 0;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+nav h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+nav .nav-link-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 70%;
+}
+
+nav .nav-link-container a {
+  font-weight: 700;
+  color: var(--dark-blue);
+  padding: 0.875rem 0;
+  background-color: var(--light-blue);
+  transition: all 300ms ease-in-out;
+  margin-bottom: 0.25rem;
+}
+
+nav .nav-link-container a:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
