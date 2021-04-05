@@ -63,6 +63,18 @@ ol li {
 .red {
   color: #e40017;
 }
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (min-width: 667px) {
+  .container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 /* 
 * Header Section
@@ -75,23 +87,36 @@ nav {
   text-align: center;
 }
 nav h2 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
   margin-bottom: 1.5rem;
 }
 nav .nav-link-container {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: 70%;
+  height: 80%;
 }
 
+@media (min-width: 667px) {
+  nav {
+    width: 30%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+  nav .nav-link-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 nav .nav-link-container a {
+  width: 80%;
   font-weight: 700;
   color: var(--dark-blue);
   padding: 0.875rem 0;
   background-color: var(--light-blue);
   transition: all 300ms ease-in-out;
-  margin-bottom: 0.25rem;
+  margin: 0.125rem auto;
 }
 
 nav .nav-link-container a:hover {
@@ -116,13 +141,24 @@ main {
   margin: 0 auto;
   padding-bottom: 2.5rem;
 }
+@media (min-width: 667px) {
+  main {
+    width: 65%;
+    margin-left: 1.5rem;
+  }
+}
 #Introduction {
   margin-top: 1.5rem;
 }
 section.main-section {
   padding: 2rem 0;
 }
-
+@media (min-width: 667px) {
+  #Introduction {
+    margin: 0;
+    /* padding: 0; */
+  }
+}
 /*
  * footer 
  */
