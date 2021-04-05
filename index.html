@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/2354933f4b.js" crossorigin="anonymous"></script>
+
     <title>React Documentation</title>
   </head>
   <body>
@@ -503,7 +505,7 @@
             A good practice is to put the event handler as a method in the
             component class:
           </p>
-          <pre><code>
+          <pre class="mb-s"><code>
       class Football extends ReComponent {
         shoot() {
           alert("Great Shot!");
@@ -517,8 +519,25 @@
               
       ReactDOM.render(&lt;Footbalgt;, document.getElement('root'));
             </code></pre>
+            <h3>Bind this
+            </h3>
+            <p class="mb-s">For methods in React, the this keyword should represent the component that owns the method.</p>
+
+             <p>That is why you should use arrow functions. With arrow functions, this will always represent the object that defined the arrow function.</p>
         </div>
       </section>
+      
     </main>
+    <footer>
+      <p>&#169; Romel Mahmud</p>
+      
+      <div class="icon-container">
+        <a href="https://www.facebook.com/romelmhmd" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/romel_mahmud" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/romel_mhmd/" target="_blank"><i class="fab fa-instagram" ></i></a>
+      </div>
+      
+
+    </footer>
   </body>
 </html>

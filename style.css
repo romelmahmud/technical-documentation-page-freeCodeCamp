@@ -57,7 +57,9 @@ ol li {
 .mb-s {
   margin-bottom: 1rem;
 }
-
+.mb-m {
+  margin-bottom: 1.25rem;
+}
 .red {
   color: #e40017;
 }
@@ -112,10 +114,42 @@ h3 {
 main {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 2.5rem;
 }
 #Introduction {
   margin-top: 1.5rem;
 }
 section.main-section {
   padding: 2rem 0;
+}
+
+/*
+ * footer 
+ */
+
+footer {
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  text-align: center;
+  padding: 1.25rem 0;
+}
+footer p {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container a {
+  color: var(--light-blue);
+  margin-right: 0.5rem;
+  transition: color 250ms ease-in-out;
+}
+
+.icon-container a:hover {
+  color: #a8a0cd;
 }
